@@ -1,0 +1,15 @@
+Demostracion:
+
+Sea f(N) una funcion de [1,infinito) -> [0,infinito) y supongamos que f(N) = NlgN + O(N).
+
+Observe entonces que f(N) - NlgN = O(N), lo que quiere decir que f(N) - NlgN <= cN.
+De esta manera f(N) <= NlgN + cN, y factorizando obtenemos f(N) <= N(lgN + c).
+Como la constante c se ve absorbida: f(N) <= NlgN, por lo que f(N) <= kNlgN, siendo k = 1 y n0 = 1 (por el dominio de f).
+Se llega a que f(N) = O(NlgN).
+
+Observe que f(N) = NlgN + O(N). Como a NlgN se le está sumando O(N) que son numeros positivos (dado que n0 debe ser mayor a 0),
+se tiene que NlgN < NlgN + O(N) y por ende se llega a que NlgN <= NlgN + O(N).
+De esta manera, f(N) >= kNlgN siendo k = 1 y n0 = 1 (por el dominio de f).
+Por lo que se llega a que f(N) = bigOmega(NlgN).
+
+Por lo tanto, como f(N) = O(NlgN) y f(N) = bigOmega(NlgN) se concluye que f(N) = Theta(NlgN).
