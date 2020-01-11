@@ -33,7 +33,7 @@ bool check_balance(const string & expr) {
   }
   else{
   return false;
-}
+  }
 }
 
 int mark_unmatched(const string & expr) {
@@ -85,9 +85,9 @@ int mark_unmatched(const string & expr) {
             return i;
           }
         }
-        }
       }
     }
+  }
 }
 return 0;
 }
